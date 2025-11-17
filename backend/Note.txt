@@ -1,0 +1,15 @@
+create root dir (blog-app)
+create sub-folders: frontend, backend
+cd backend
+npm init -y
+npm install express
+npm install -D nodemon
+Add to package.json scripts: "start": "nodemon index.js". Run npm start.
+npm install mongoose
+
+"MongoDB is a NoSQL database that stores data in flexible JSON-like documents"
+
+username: ehiremengold_db_user
+password: NFb8m9QG3XwJJySG
+
+mongodb+srv://ehiremengold_db_user:NFb8m9QG3XwJJySG@cluster0.rfpr2je.mongodb.net/?appName=Cluster0
