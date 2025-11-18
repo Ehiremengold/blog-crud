@@ -1,9 +1,17 @@
-import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import PostForm from "./components/PostForm";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<PostForm />} />
+        <Route path="/:id" element={<PostForm />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
